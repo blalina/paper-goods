@@ -753,6 +753,7 @@ a.text {
     /* Collaboration */
     .collaboration__items {
         flex-wrap: wrap;
+        justify-content: space-around;
         gap: 5%;
     }
 
@@ -811,16 +812,116 @@ a.text {
     }
 
     /* Header */
+    .header--horizontal-line {
+        width: auto;
+    }
+
+    .header__logo {
+        display: flex;
+        left: 35%;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__nav__link {
+        font-size: 18px;
+        line-height: 21.09px;
+    }
+
+    .header__user-menu {
+        display: flex;
+        position: static;
+
+        padding: 20% 0 6% 0;
+    }
 
     /* Information */
+    .info__article {
+        width: auto;
+
+        justify-content: center;
+    }
+
+    .info__title {
+        font-size: 30px;
+        line-height: 30px;
+
+        padding-bottom: 10%;
+    }
+
+    .info__text {
+        font-size: 14px;
+        line-height: 21px;
+
+        padding-bottom: 10%;
+    }
+
+    .info__btn, .sketchbook__btn {
+        height: 50px;
+        width: 144px;
+    }
+
+    .info-wrapper-img__div {
+        display: none;
+    }
 
     /* Adout product */
+    .product__cat {
+        flex-direction: column;
+
+        margin: 9% 0;
+    }
+
+    .product__subcat {
+        width: auto;
+        flex-direction: row;
+
+        margin: 6% 0;
+    }
+
+    .product__subcat__img {
+        width: 45%;
+    }
+
+    .product__subcat__text__div {
+        margin-left: 9%;
+    }
+
+    .product__info {
+        margin-bottom: 17%;
+    }
+
+    .product__img {
+        width: 100%;
+
+        margin-bottom: 7%;
+    }
 
     /* Catalog */
+    .catalog {
+        gap: 0;
+
+        margin-bottom: 20%;
+    }
+
+    .catalog__card {
+        width: auto;
+
+        margin: 20% 0 0 0;
+    }
 
     /* Collaboration */
 
     /* Sketchbook */
+    .sketchbook {
+        margin-top: 20%;
+    }
+
+    .sketchbook__article {
+        margin-bottom: 20%;
+    }
 
     /* Footer */
 }
