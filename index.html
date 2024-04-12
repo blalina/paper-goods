@@ -65,8 +65,14 @@
                     </article>
                     <div class="info-wrapper-img__div">
                         <picture class="info__images">
-                            <source media="(max-width: 768px)" srcset="src/assets/images/Layer-2-copy-tablet-690.svg">
-                            <source media="(max-width: 576px)" srcset="src/assets/images/Layer-2-copy-tablet-510.svg">
+                            <!-- <source media="(max-width: 768px)" srcset="src/assets/images/Layer-2-copy-tablet-690.svg">
+                            <source media="(max-width: 576px)" srcset="src/assets/images/Layer-2-copy-tablet-510.svg"> -->
+                            <source 
+                                type="image/svg+xml"
+                                srcset="src/assets/images/Layer-2-copy-tablet-690.svg 768w,
+                                        src/assets/images/Layer-2-copy-tablet-510.svg 510w"
+                                sizes="(max-width: 768px) 28vw, (max-width: 576px) 39vw"
+                            >
                             <img class="info__img image-size" src="src/assets/images/Layer-2-copy.svg" alt="white paper image in a tube">
                         </picture>
                     </div>
