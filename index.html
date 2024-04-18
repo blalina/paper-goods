@@ -16,13 +16,16 @@
         <header class="header">
             <img class="header--horizontal-line" src="src/assets/images/horizontal-line.svg" alt="horizontal-line">
             <div class="header__container width-wrapper">
-                <div></div>
                 <div class="header__logo">
                     <img src="src/assets/images/Ellipse 3.svg" class="header__logo--ellipse1" alt="logotype ellipse">
                     <p class="header__logo__p">simple</p>
                     <img src="src/assets/images/Rectangle 3.svg" class="header__logo--rectangle" alt="logotype rectangle">
                     <img src="src/assets/images/Ellipse 1.svg" class="header__logo--ellipse2" alt="logotype ellipse">
                 </div>
+                <input type="checkbox" id="burger-checkbox" class="header__burger-checkbox">
+                <label for="burger-checkbox" class="header__burger-label">
+                    <!-- <img class="burger-menu--img" src="src/assets/images/Burger-menu.svg" alt="☰"> -->
+                </label>
                 <nav class="header__nav">
                     <ul class="header__ul">
                         <li class="header__li">
@@ -65,14 +68,8 @@
                     </article>
                     <div class="info-wrapper-img__div">
                         <picture class="info__images">
-                            <!-- <source media="(max-width: 768px)" srcset="src/assets/images/Layer-2-copy-tablet-690.svg">
-                            <source media="(max-width: 576px)" srcset="src/assets/images/Layer-2-copy-tablet-510.svg"> -->
-                            <source 
-                                type="image/svg+xml"
-                                srcset="src/assets/images/Layer-2-copy-tablet-690.svg 768w,
-                                        src/assets/images/Layer-2-copy-tablet-510.svg 510w"
-                                sizes="(max-width: 768px) 28vw, (max-width: 576px) 39vw"
-                            >
+                            <source media="(max-width: 576px)" srcset="src/assets/images/Layer-2-copy-tablet-510.svg">
+                            <source media="(max-width: 768px)" srcset="src/assets/images/Layer-2-copy-tablet-690.svg">
                             <img class="info__img image-size" src="src/assets/images/Layer-2-copy.svg" alt="white paper image in a tube">
                         </picture>
                     </div>
@@ -182,6 +179,7 @@
                 </div>
             </section>
     <!-- Sketchbook -->
+            <div class="sketchbook-wrapper">
             <div class="width-wrapper">
                 <section class="sketchbook">
                     <article class="sketchbook__article">
@@ -193,13 +191,14 @@
                     </article>
                     <div class="sketchbook__div">
                         <picture class="sketchbook__images">
-                            <source srcset="src/assets/images/sketchbook-second-view.svg" media="(max-width: 768px)">
-                            <source srcset="src/assets/images/sketchbook-third-view.svg" media="(max-width: 576px)">
-                            <source srcset="src/assets/images/sketchbook-fourth-view.svg" media="(max-width: 320px)">
+                            <source media="(max-width: 320px)" srcset="src/assets/images/sketchbook-fourth-view.svg">
+                            <source media="(max-width: 576px)" srcset="src/assets/images/sketchbook-third-view.svg">
+                            <source media="(max-width: 768px)" srcset="src/assets/images/sketchbook-second-view.svg">
                             <img class="sketchbook__img image-size" src="src/assets/images/pic.svg" alt="sketchbook image">
                         </picture>
                     </div>
                 </section>
+            </div>
             </div>
         </main>
     <!-- Footer -->

@@ -104,6 +104,10 @@ a.text {
     margin: 2px;
 }
 
+.header__burger-checkbox, [for=burger-checkbox] {
+    display: none;
+}
+
 .header__nav {
     padding: 1.8rem 0;
 }
@@ -123,6 +127,10 @@ a.text {
 
     margin: 1.3vw;
     padding: 0.5vw;
+}
+
+.header__user-menu {
+    display: flex;
 }
 
 .header__user-menu__search {
@@ -174,8 +182,11 @@ a.text {
     color: #7875FE;
 }
 
+.info__images {
+    display: flex; 
+}
+
 .info-wrapper-img__div {
-    display: flex;
     margin-top: 2.5rem;
 }
 
@@ -304,11 +315,8 @@ a.text {
 
 .collaboration__items {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     gap: 2%;
-
-    /* height: 16rem; */
 }
 
 .collaboration__item {
@@ -584,8 +592,6 @@ a.text {
     }
 
     /* Adout product */
-    .product__cat {}
-
     .product__subcat {
         flex-direction: column;
     }
@@ -654,7 +660,7 @@ a.text {
     }
 
     /* Sketchbook */
-    .sketchbook {
+    .sketchbook-wrapper {
         position: relative;
     }
 
@@ -676,7 +682,7 @@ a.text {
         width: 53%;
 
         position: absolute;
-        right: -39px;
+        right: 0;
     }
     
     /* Footer */
@@ -799,6 +805,9 @@ a.text {
 
     .sketchbook__div {
         position: static;
+        width: 88%;
+
+        margin-top: 10%;
     }
 
     /* Footer */
@@ -821,8 +830,27 @@ a.text {
         left: 35%;
     }
 
+    .header__burger-label {
+        display: block;
+        padding: 20% 0 6% 0;
+    }
+
+    .header__burger-label::before {
+        content: "☰";
+    }
+
+    .header__burger-checkbox:checked + label + nav {
+        display: block;
+    }
+
     .header__nav {
         display: none;
+
+    }
+
+    .header__ul {
+        flex-direction: column;
+
     }
 
     .header__nav__link {
@@ -835,6 +863,10 @@ a.text {
         position: static;
 
         padding: 20% 0 6% 0;
+    }
+
+    .header__user-menu__log-in {
+        margin-left: 4.3vw;
     }
 
     /* Information */
@@ -924,4 +956,20 @@ a.text {
     }
 
     /* Footer */
+    .footer__information__wrapper {
+        display: block;
+    }
+
+    .footer__logo {
+        justify-content: center;
+
+        border-bottom: 1px solid;
+
+        padding: 7% 0 5% 0;
+        
+    }
+
+    .footer__social {
+        justify-content: center;
+    }
 }
