@@ -1,0 +1,1 @@
+This is a pet project based on a template https://www.figma.com/file/sJwabNIQ83JF9XIGfYCOl4/Simple?type=design&node-id=1-4&mode=design&t=5kFDxdhDv5PvbS7D-0
